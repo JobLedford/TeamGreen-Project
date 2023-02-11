@@ -1,0 +1,92 @@
+.splashes {
+    background-image: url("Images/about-us-hero.jpeg");
+    height: 425px;
+}
+.splashes h1 {
+    color:#ffffff;
+    text-align: center;
+    padding: 15%;
+    font-size: 60px;;
+    font-family: sans-serif;
+    text-shadow: 2px 2px black;
+}
+.philosophy {
+    background-image: url("backgroundImages/about-our-philosophy-bg.jpeg");
+    padding: 50px;
+}
+.philosophy h1 {
+    text-align: center;
+}
+.philosophy p {
+    text-align: center;
+    font-size: 1em 16px;
+    font-family: sans-serif;
+}
+.goodjob {
+    background-image: url("backgroundImages/about-we-do-a-pretty-good-job-bg.jpeg");
+    padding: 50px;
+}
+.goodjob h1 {
+    text-align: center;
+}
+.goodjob p {
+    text-align: center;
+    font-size: 1em 16px;
+    font-family: sans-serif;
+}
+.hear {
+    text-align: center;
+    display: block;
+}
+.awards {
+    text-align: center;
+}
+.swimming {
+    background-image: url("Images/lap-swimming.jpeg");
+}
+.contact {
+    background-image: url("Images/contact-hero.jpeg");
+    font-family: bodoni moda;
+}
+header {
+    background-color: #1A2E38;
+    opacity: 90%;
+}
+.mainnav li {
+    display:inline;
+}
+button {
+    color: #03B1F4;
+    background-color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+.button :hover {
+    background-color: #03B1F4;
+    color:#ffffff;
+}
+.image {
+    display: flex;
+    justify-content: center;
+    padding-top:50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-image: url(backgroundImages/footer-bg.jpeg);
+}
