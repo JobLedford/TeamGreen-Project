@@ -1,33 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!--Meta tags-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us!</title>
-    <!--Link CSS and Ajax-->
-    <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!--Custom CSS-->
     <link rel="stylesheet" href="style.css">
+    <!--Link Font Awesome CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--Add Icon Library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- JQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <title>Contact Us!</title>
+
 </head>
 <!--Use class "Class='job.heading'"-->
+
 <body id="Contact">
-    <div id="container">
+    <div id="container-fluid">
         <header>
-            <div class="logo">
-                <img src="Images/logo-small.png" alt="Logo for splashes">
-            </div>
-            <nav class="mainnav">
-                <ul>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="#">Swimming Lessons</a></li>
-                    <li><a href="#">Swim Programs</a></li>
-                    <li><a href="AdultPrograms.html">Adult Programs</a></li>
-                    <li><a href="#">Locations</a></li>
-                    <li class="active"><a href="Contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-            <div class="button">
-                <button type="button">Register/Sign In</button>
+            <div class="main-header">
+                <!--NavBar-->
+                <nav class="navbar navbar-expand-xl fixed-top navbar-dark" style="background-color:#1A2E38; opacity:0.9;">
+                    <!--Logo-->
+                    <div class="logo">
+                        <img src="Images/logo-small.png" alt="Splashes logo" class="src" width="80%">
+                    </div>
+                    <!--Hamburger Menu-->
+                    <!--Values for data-target and aria-controls must match id of div with the collapse class-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span> <!-- span tag is an inline element -->
+                    </button>
+                    <!--Nav Links-->
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <ul class="navbar-nav"> <!-- Add navbar-nav class -->
+                            <li class="nav-item"> <!-- Add nav-item class -->
+                                <a class="nav-link  text-white" href="About.html">About</a> <!-- Add nav-link class -->
+                            </li>
+                            <li class="nav-item active"> <!-- Add nav-item class -->
+                                <a class="nav-link active text-white" href="#">Swimming Lessons</a>
+                                <!-- Add nav-link class -->
+                            </li>
+                            <li class="nav-item"> <!-- Add nav-item class -->
+                                <a class="nav-link text-white" href="#">Swim Programs</a> <!-- Add nav-link class -->
+                            </li>
+                            <li class="nav-item"> <!-- Add nav-item class -->
+                                <a class="nav-link text-white" href="AdultPrograms.html">Adult Programs</a>
+                                <!-- Add nav-link class -->
+                            </li>
+                            <li class="nav-item"> <!-- Add nav-item class -->
+                                <a class="nav-link text-white" href="#">Locations</a> <!-- Add nav-link class -->
+                            </li>
+                            <li class="nav-item"> <!-- Add nav-item class -->
+                                <a class="nav-link text-white" href="Contact.html">Contact Us</a>
+                                <!-- Add nav-link class -->
+                            </li>
+                        </ul>
+                        <div class="button">
+                            <button type="button">Register/Sign In</button>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </header>
     </div>
@@ -35,57 +76,158 @@
         <div class="contact">
             <h1>Contact Us</h1>
         </div>
-        <div>
+        <div class="par">
             <p>We’d love to help. Send us an email using one of the buttons below and
-a Splashes representative will get back to you as soon as possible.</p>
+                a Splashes representative will get back to you as soon as possible.</p>
+        </div>
+        <div class="container">
+            <!--Row 1-->
+            <div class="row justify-content-evenly">       
+                <div class="col-md ">
+                    <img src="iconImages/question.svg">
+                    <a href="">New Customer Inquires</a>
+                </div>       
+                <div class="col-md ">
+                    <img src="iconImages/party-coordinator-form.svg">
+                    <a href="">Contact Party Coordinator</a>
+                </div>       
+                <div class="col-md ">
+                    <img src="iconImages/concern.svg" height="250px;">
+                    <a href="">Voice a Concern</a>
+                </div>     
+                <div class="col-md">
+                    <img src="iconImages/swimming-pool.svg" height="250px;"><br>
+                    <a href="">Pool Rental</a>
+                </div>
+            </div><br>
+            <!--Row 2-->
+            <div class="row justify-content-evenly">
+                <div class="col-md">
+                    <img src="iconImages/suggestion.svg">
+                    <a href="">Give a Suggestion</a>
+                </div>                
+                <div class="col-md">
+                    <img src="iconImages/compliment.svg">
+                    <a href="">Share a Compliment</a>
+                </div>            
+                <div class="col-md">
+                    <img src="iconImages/form.svg">
+                    <a href="">Water Safety Presentation Inquiry</a>
+                </div>
+                <div class="col-md">
+                    <img src="iconImages/baby.svg">
+                    <a href="">Parent & Me Lesson Interest</a>
+                </div>
+            
+            </div>
         </div>
     </main>
-    <footer>
-        <div class="topfoot">
-            <img src="Images/wave-small.png" alt="Splashes logo">
-            <nav class="footnav">
-                <ul>
-                    <li><a>About</a></li>
-                    <li><a>Locations</a></li>
-                    <li><a>FAQs</a></li>
-                    <li><a>Contact</a></li>
-                    <li><a>Register/Sign In</a></li>
-                    <li><a>Careers</a></li>
-                </ul>
-            </nav>
-            <div class="social">
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-"></a>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-youtube"></a>
+    <footer class="main-footer">
+        <!--Logo-->
+        <div class="footer-logo">
+            <img src="Images/wave-small.png" alt="Splashes footer logo" class="src" width="30%">
+        </div>
+        <!--Footer Links-->
+        <div class="grid_system">
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Locations</a>
+                        </li>
+                        <li clas="nav-item">
+                            <a class="nav-link" href="#">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Register / Sign In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Careers</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-4">
+                    <!--Social Media-->
+                    <div class="social">
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-yelp"></a>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="phone">
-            <p><strong>Orange County</strong></p>
-            <a href="">(949)450-0777</a>
-            <p><strong>San Diego County</strong></p>
-            <a href="">(760)603-9400</a>
-            <p><strong>Los Angeles County</strong></p>
-            <a href="">(626)836-1200</a>
-            <p><strong>Northern California</strong></p>
-            <a href="">(408)279-1700</a>
-            <p><strong>Denver</strong></p>
-            <a href="">(720)344-7700</a>
-        </div>
-        <div class="bottomfoot">
-            <div class="footlogos">
-                <img src="footerImages/footer-usssa-logo-2.png" alt="USSSA Logo">
-                <img src="footerImages/footer-ndpa-logo.png" alt="NDPA Logo">
-                <img src="footerImages/footer-member-issa-logo.png" alt="ISSA Logo">
-                <img src="footerImages/footer-stop-drowning-now-logo.png" a;t="Stop Drowning Now Logo">
+        <hr>
+        <!--County Numbers-->
+        <div class="grid_system" id="county-numbers">
+            <div class="row">
+                <div class="col-lg-2">
+                    <p>Orange County</p>
+                    <p>(949) 450-0777</p>
+                </div>
+                <div class="col-lg-2">
+                    <p>San Diego County</p>
+                    <p>(760) 603-9400</p>
+                </div>
+                <div class="col-lg-2">
+                    <p>Los Angeles County</p>
+                    <p>(626) 836-1200</p>
+                </div>
+                <div class="col-lg-2">
+                    <p>Northern California</p>
+                    <p>(408) 279-1700</p>
+                </div>
+                <div class="col-lg-2">
+                    <p>Denver</p>
+                    <p>(720) 344-7700</p>
+                </div>
             </div>
-            <div class="copy">
-                &copy;
-                <p>2022 Splashes. All Rights Reserved.</p>
-            </div>
         </div>
+        <hr>
+        <!--Sponsers-->
+        <div class="grid_system" id="sponsers">
+            <div class="row">
+                <div class="col-lg-1">
+                    <img src="footerImages/footer-usssa-logo-2.png" alt="Sponser logo">
+                </div>
+                <div class="col-lg-2">
+                    <img src="footerImages/footer-ndpa-logo.png" alt="Sponser logo">
+                </div>
+                <div class="col-lg-1">
+                    <img src="footerImages/footer-member-issa-logo.png" alt="Sponser logo">
+                </div>
+                <div class="col-lg-3">
+                    <img src="footerImages/footer-stop-drowning-now-logo.png" alt="Sponser logo">
+                </div>
+                <div class="col-lg-2">
+                    <p></p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="copy">&copy Copyright 2020 :: Splashes.com<br>All Rights Reserved</div>
+                </div>
+            </div>
+        </div>       
     </footer>
+    </div>
+
+    <!-- Bootstrap jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 </body>
 </html>
